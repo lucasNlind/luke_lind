@@ -1,0 +1,29 @@
+.footerWrapper {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: black;
+}
+
+.footerMainText {
+    margin: 25px 0px 0px 0px;
+    font-family: omnes-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.footerSubText {
+    margin: 25px 0px 0px 0px;
+    font-family: omnes-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color:black;
+    text-decoration: none;
+}
+
+.footerLink {
+    color: black;
+}
