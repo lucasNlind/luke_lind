@@ -91,12 +91,12 @@ function App() {
           display: 'flex', 
           flexDirection: 'column', 
           width: { xs: '90%', md: '35%' },
-          margin: { xs: '4rem auto 0 auto', md: '8rem auto 0 auto' },
+          margin: { xs: '2rem auto 0 auto', md: '8rem auto 0 auto' },
         }}
       >
 
         {/* MENU ITEMS */}
-        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Box sx={{ display: 'inline-flex', alignItems: 'center', justifyContent: { xs: 'flex-start', md: 'space-between' }, gap: { xs: '1rem', md: '0' } }}>
           {menuItems.map((item) => (
             <Box
               sx={{
@@ -109,13 +109,13 @@ function App() {
               onClick={() => setView(item.view)}
             >
               <img src={item.icon} style={{ width: '1.5rem', height: '1.5rem', margin: '0 1rem 0 0' }} />
-              <Typography variant='body1'>{item.label}</Typography>
+              <Typography variant='body1' sx={{ display: { xs: 'none', md: 'block' } }}>{item.label}</Typography>
             </Box>
           ))}  
         </Box>
 
         {/* TITLE */}
-        <Box sx={{ display: 'flex', flexDirection: 'column', m: '6rem 0 0 0' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', m: { xs: '4rem 0 0 0', md: '6rem 0 0 0' } }}>
           <Box sx={{ display: 'inline-flex', alignItems: 'center', m: '0 0 2rem 0' }}>
               <img src={HomeIcon} style={{ width: '2rem', height: '2rem', margin: '0 1.5rem 0 0' }} />
               <Typography variant='h4'>{menuItems.find(item => item.view === view)?.label}</Typography>
@@ -124,7 +124,7 @@ function App() {
             <Box
               ref={contentRef}
               sx={{ 
-                maxHeight: '60vh',
+                maxHeight: { xs: '75vh', md: '60vh' },
                 overflowY: 'auto',
                 '&::-webkit-scrollbar': {
                 display: 'none'

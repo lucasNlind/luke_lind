@@ -22,7 +22,7 @@ const Book = ({ title, author, review, quote }: BookProps) => {
                         {title}
                     </strong>
                 </Typography>
-                <Typography variant='body1'>
+                <Typography variant='body1' sx={{ display: { xs: 'none', md: 'block' } }}>
                     by {author}
                 </Typography>
             </Box>
@@ -53,8 +53,8 @@ const Books = () => {
                 {BOOKS.map((book) => (
                     <Book
                         title={book.title}
-                    author={book.author}
-                    review={book.review}
+                        author={book.author}
+                        review={book.review}
                         quote={book.quote}
                     />
                 ))}
