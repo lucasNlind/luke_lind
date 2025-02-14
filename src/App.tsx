@@ -70,6 +70,12 @@ function App() {
       }
     };
 
+    // Reset scroll position when view changes
+    if (contentRef.current) {
+      contentRef.current.scrollTop = 0;
+      setIsScrolled(false);
+    }
+
     checkIfScrollable();
     // Add event listeners
     window.addEventListener('resize', checkIfScrollable);
