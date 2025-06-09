@@ -18,7 +18,7 @@ export const BOOKS: Book[] = [
         title: 'Conscious Business',
         author: 'Fred Kofman',
         review: [
-            'I’m an engineer by trade, so I’ve had to work really hard to develop my social intelligence - especially as our team grows. I know I won’t be coding forever, and this booked helped me understand the right way to deal with people as a leader.',
+            'I’m an engineer by trade, so I’ve had to work really hard to develop my social intelligence - especially as our team grows. I know I won’t be coding forever, and this book helped me understand the right way to deal with people as a leader.',
             'Kofman opens your eyes to the benefits of humility and empathy in a organization, which can only be achieved by living consciously.'
         ],
         quote: 'Living consciously is a state of being mentally active rather than passive. It is the ability to look at the world through fresh eyes. It is intelligence taking joy in its own function.'
@@ -35,7 +35,7 @@ export const BOOKS: Book[] = [
         title: 'The Sovereign Individual',
         author: 'James Dale Davidson',
         review: [
-            'One of the most forward-thinking books I’ve read, by far. It will be considered prescient 100 or so years from now.',
+            'One of the most forward-thinking books I’ve read, by far. It might even be considered prescient 100 or so years from now.',
             'The authors explain how governments come to power through the monopolization of violence, which is becoming increasingly democratized. The picture they paint of the future is really unlike anything I’ve ever read - well worth the read.'
         ]
     },
